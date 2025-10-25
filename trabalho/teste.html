@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvendo com CSS para Dispositivos Móveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Desenvolvendo com CSS para Dispositivos Móveis</h1>
+        <nav>
+            <ul>
+                <li><a href="#conceito">Conceito</a></li>
+                <li><a href="#tecnicas">Técnicas</a></li>
+                <li><a href="#exemplos">Exemplos</a></li>
+                <li><a href="#desenvolvedores">Desenvolvedores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONCEITO -->
+    <section id="conceito">
+        <h2>O que é Desenvolvimento com CSS para Dispositivos Móveis?</h2>
+        <p>
+            O desenvolvimento com CSS para dispositivos móveis, também chamado de <strong>design responsivo</strong>,
+            é a prática de criar sites que se ajustam automaticamente a diferentes tamanhos de tela.  
+            Isso garante que o conteúdo seja legível e funcional em celulares, tablets, notebooks e desktops.  
+        </p>
+        <p>
+            O design responsivo melhora a experiência do usuário, evita que ele precise aumentar ou diminuir a tela manualmente,
+            e é fundamental para que o site funcione bem em qualquer dispositivo moderno.
+        </p>
+        <p>
+            Além disso, os sites responsivos têm melhor desempenho em SEO (buscadores como Google),  
+            porque o mesmo conteúdo se adapta a todos os dispositivos sem precisar de versões separadas.
+        </p>
+    </section>
+
+    <!-- TÉCNICAS -->
+    <section id="tecnicas">
+        <h2>Técnicas e Boas Práticas em CSS</h2>
+        <p>
+            Para criar sites adaptáveis, existem diversas técnicas e boas práticas no CSS. Algumas das mais importantes incluem:
+        </p>
+        <ul>
+            <li><strong>Media Queries:</strong> Permitem aplicar estilos diferentes dependendo do tamanho da tela.  
+                Por exemplo, podemos reduzir o tamanho das fontes ou reorganizar colunas em celulares.</li>
+            <li><strong>Flexbox:</strong> Uma ferramenta poderosa para criar layouts flexíveis e alinhamentos precisos.</li>
+            <li><strong>Grid Layout:</strong> Permite organizar elementos em linhas e colunas de forma totalmente responsiva.</li>
+            <li><strong>Unidades Flexíveis:</strong> %, em, rem, vh e vw ajudam a tornar o conteúdo adaptável.</li>
+            <li><strong>Mobile First:</strong> Desenvolva primeiro pensando nos celulares, depois adapte para telas maiores.</li>
+            <li><strong>Performance:</strong> Evitar efeitos pesados e otimizar o CSS garante carregamento rápido em celulares.</li>
+        </ul>
+        <p>
+            Aplicando essas técnicas corretamente, você consegue que o site se ajuste a qualquer dispositivo,  
+            mantendo a estética e a funcionalidade.
+        </p>
+    </section>
+
+    <!-- EXEMPLOS -->
+    <section id="exemplos">
+        <h2>Exemplos Práticos de CSS Responsivo</h2>
+        <p>
+            Abaixo está um exemplo de código CSS que permite criar layouts flexíveis e adaptáveis a diferentes tamanhos de tela:
+        </p>
+        <pre>
+/* Layout Flexível */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    flex: 1 1 200px;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+        </pre>
+        <p>
+            Nesse exemplo, usamos o <code>flex-wrap</code> para que os elementos se reorganizem automaticamente,  
+            e uma <strong>media query</strong> para modificar o layout em telas pequenas.  
+            Essa é a base de um site responsivo e adaptável.
+        </p>
+        <p>
+            Outro exemplo importante é o ajuste de fontes e espaçamentos:
+        </p>
+        <pre>
+body {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+        </pre>
+        <p>
+            Aqui, reduzimos o tamanho da fonte em telas menores para melhorar a legibilidade,  
+            uma prática comum em desenvolvimento mobile.
+        </p>
+    </section>
+
+    <!-- DESENVOLVEDORES -->
+    <footer id="desenvolvedores">
+        <h2>Desenvolvedores</h2>
+        <ul class="dev-lista">
+            <li>Gabriel Barbosa</li>
+            <li>Henry Santana</li>
+            <li>Davi Valle</li>
+            <li>Thayrik Gabriel</li>
+            <li>Kaiky André</li>
+            <li>Lara Stefany</li>
+        </ul>
+        <p class="final">&copy; 2025 - Trabalho escolar de Desenvolvimento Web</p>
+    </footer>
+</body>
+</html>
